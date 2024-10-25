@@ -282,18 +282,6 @@ section{
   .more-text {
     display: none; /* Initially hidden */
   }
-  
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    .about-content {
-      flex-direction: column;
-    }
-  
-    .about-image {
-      margin-bottom: 15px;
-    }
-  }
-  
 
   #skills {
     padding: 2rem;
@@ -570,19 +558,5 @@ footer .linkedin {
 
 footer .github {
     color: #333; 
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    #contact, .other-sections {
-        width: 90%;
-        margin: 0 auto;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
 }
 
