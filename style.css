@@ -560,3 +560,18 @@ footer .github {
     color: #333; 
 }
 
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    #contact, .other-sections {
+        width: 90%;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
