@@ -557,17 +557,32 @@ footer {
 }
 
 footer a {
-    text-decoration: none; /* No underline */
+    text-decoration: none; 
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 footer .linkedin {
-    color: #0077B5; /* LinkedIn color */
+    color: #0077B5; 
 }
 
 footer .github {
-    color: #333; /* GitHub color */
+    color: #333; 
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    #contact, .other-sections {
+        width: 90%;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
