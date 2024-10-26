@@ -560,17 +560,147 @@ footer .github {
     color: #333; 
 }
 
-@media (max-width: 768px) {
+/* General for small mobile devices */
+@media only screen and (max-width: 480px) {
     body {
-        padding: 10px;
+        font-size: 14px;
+        text-align: center; /* Center content */
+        padding: 0 10px; 
     }
-    #contact, .other-sections {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .bubble-effect {
+        width: 80px; /* Adjust bubble size */
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .navbar, .footer {
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .about-section, .skills-section {
+        text-align: center;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* General for small tablets */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
         width: 90%;
         margin: 0 auto;
     }
-    img {
-        max-width: 100%;
-        height: auto;
+
+    .bubble-effect {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbar, .footer {
+        flex-direction: row;
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* General for larger tablets and smaller laptops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .bubble-effect {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navbar, .footer {
+        flex-direction: row;
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* General for laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .bubble-effect {
+        width: 150px;
+        height: 150px;
+    }
+
+    .navbar, .footer {
+        flex-direction: row;
+        font-size: 18px;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* General for larger screens */
+@media only screen and (min-width: 1441px) {
+    body {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 75%;
+        padding: 30px;
+    }
+
+    .bubble-effect {
+        width: 180px;
+        height: 180px;
+    }
+
+    .navbar, .footer {
+        flex-direction: row;
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
     }
 }
 
