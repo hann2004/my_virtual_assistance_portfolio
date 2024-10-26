@@ -536,172 +536,73 @@ button:hover {
 }
 
 footer {
-    color: white; /* White text */
-    padding: 20px; /* Padding for space */
-    text-align: center; /* Centered text */
-    position: relative; /* Relative positioning */
-    bottom: 0; /* Align at the bottom */
-    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #222; /* dark background */
+    color: #fff; /* text color */
+    position: relative;
 }
 
+/* Links styling */
 footer a {
-    text-decoration: none; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-    text-decoration: underline; 
+    color: #ddd; /* light gray on hover */
 }
 
-footer .linkedin {
-    color: #0077B5; 
+/* LinkedIn and GitHub specific colors */
+footer a[href*="linkedin"] {
+    color: #0077B5; /* LinkedIn blue */
 }
 
-footer .github {
-    color: #333; 
+footer a[href*="linkedin"]:hover {
+    color: #005983;
 }
 
-/* General for small mobile devices */
-@media only screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
-        text-align: center; /* Center content */
-        padding: 0 10px; 
-    }
-
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .bubble-effect {
-        width: 80px; /* Adjust bubble size */
-        height: 80px;
-        margin: 0 auto;
-    }
-
-    .navbar, .footer {
-        flex-direction: column;
-        font-size: 12px;
-    }
-
-    .about-section, .skills-section {
-        text-align: center;
-    }
-
-    .icon {
-        width: 40px;
-        height: 40px;
-    }
+footer a[href*="github"] {
+    color: #333; /* GitHub gray */
 }
 
-/* General for small tablets */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    body {
-        font-size: 16px;
-    }
-
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .bubble-effect {
-        width: 100px;
-        height: 100px;
-    }
-
-    .navbar, .footer {
-        flex-direction: row;
-        font-size: 14px;
-    }
-
-    .icon {
-        width: 50px;
-        height: 50px;
-    }
+footer a[href*="github"]:hover {
+    color: #555;
 }
 
-/* General for larger tablets and smaller laptops */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 18px;
-    }
-
-    .container {
-        width: 85%;
-        padding: 15px;
-    }
-
-    .bubble-effect {
-        width: 120px;
-        height: 120px;
-    }
-
-    .navbar, .footer {
-        flex-direction: row;
-        font-size: 16px;
-    }
-
-    .icon {
-        width: 60px;
-        height: 60px;
-    }
+/* Arrow styling */
+footer .bx-up-arrow-alt {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    background-color: var(--hover-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* General for laptops */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    body {
-        font-size: 20px;
-    }
-
-    .container {
-        width: 80%;
-        padding: 20px;
-    }
-
-    .bubble-effect {
-        width: 150px;
-        height: 150px;
-    }
-
-    .navbar, .footer {
-        flex-direction: row;
-        font-size: 18px;
-    }
-
-    .icon {
-        width: 70px;
-        height: 70px;
-    }
+footer .bx-up-arrow-alt:hover {
+    background-color: #0077B5; /* hover color */
+    color: #fff;
 }
 
-/* General for larger screens */
-@media only screen and (min-width: 1441px) {
-    body {
-        font-size: 22px;
-    }
 
-    .container {
-        width: 75%;
-        padding: 30px;
-    }
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh; /* Full viewport height */
+}
 
-    .bubble-effect {
-        width: 180px;
-        height: 180px;
-    }
-
-    .navbar, .footer {
-        flex-direction: row;
-        font-size: 20px;
-    }
-
-    .icon {
-        width: 80px;
-        height: 80px;
-    }
+/* Flex to push footer to the bottom */
+main {
+    flex: 1;
 }
 
 
