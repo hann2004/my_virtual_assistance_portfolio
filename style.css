@@ -683,6 +683,20 @@ main {
     .contact-icons {
         margin-top: 2rem;
     }
+    .about-title {
+        font-size: 28px;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image {
+        width: 60%; /* Adjust image size */
+        margin: 0 auto 20px auto; /* Center image and add spacing */
+    }
+    .about-text {
+        max-width: 90%;
+    }
     .certificate-images {
         flex-direction: column;
         align-items: center;
@@ -735,8 +749,15 @@ main {
         left: 10%;
         top: 13%;
     }
-    .about{
-        flex-direction: column-reverse;
+    .about-title {
+        font-size: 24px;
+    }
+    .about-image {
+        width: 80%;
+    }
+    .about-text {
+        font-size: 16px;
+        max-width: 100%;
     }
     .skills-grid{
         grid-template-columns: 1fr;
@@ -751,6 +772,16 @@ main {
 @media(max-width:420px){
     html{
         font-size: 80%;
+    }
+    .about-title {
+        font-size: 20px;
+    }
+    .about-image {
+        width: 100%; /* Take up full width */
+        margin-bottom: 15px;
+    }
+    .about-text {
+        font-size: 14px;
     }
 
 }
