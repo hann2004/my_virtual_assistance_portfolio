@@ -604,23 +604,30 @@ footer a[href*="github"]:hover {
     color: #555;
 }
 
-/* Arrow styling */
 footer .bx-up-arrow-alt {
     position: absolute;
     right: 20px;
     bottom: 20px;
     font-size: 24px;
-    background-color: var(--hover-color);
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hover-color); 
     color: #fff;
     padding: 10px;
     border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
     transition: background-color 0.3s, color 0.3s;
 }
 
 footer .bx-up-arrow-alt:hover {
-    background-color: #0077B5; /* hover color */
+    background-color: var(--hover-color); 
     color: #fff;
 }
+
+
 
 
 .container {
@@ -766,6 +773,9 @@ main {
     .skills-image {
         width: 100%;
         max-width: 300px;
+    }
+     footer .bx-up-arrow-alt {
+        display: none;
     }
 }
 
