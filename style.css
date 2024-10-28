@@ -751,6 +751,9 @@ main {
     .home-image{
         margin-bottom: 5rem;
     }
+    .contact-icons {
+        margin-top: 2rem;
+    }
     .liquid-shape{
         width: 80%;
         left: 10%;
@@ -782,6 +785,9 @@ main {
 @media(max-width:420px){
     html{
         font-size: 80%;
+    }
+    .contact-icons {
+        margin-top: 2rem;
     }
     .about-title {
         font-size: 20px;
