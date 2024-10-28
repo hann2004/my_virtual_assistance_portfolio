@@ -687,9 +687,6 @@ main {
     .home.content {
         margin-top: 5rem;
     }
-    .contact-icons {
-        margin-top: 2rem;
-    }
     .about-title {
         font-size: 28px;
     }
@@ -782,9 +779,6 @@ main {
 @media(max-width:420px){
     html{
         font-size: 80%;
-    }
-    .contact-icons a i {
-        font-size: 1.8rem; 
     }
     .about-title {
         font-size: 20px;
