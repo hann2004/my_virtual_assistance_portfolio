@@ -409,7 +409,7 @@ section{
     justify-content: center;
 }
 
-.certificate {
+.certificates {
     width: 200px;
     text-align: center;
     background: #212121;
@@ -418,23 +418,23 @@ section{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.certificate img {
+.certificates img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.certificate h3 {
+.certificates h3 {
     font-size: 18px;
     margin-top: 10px;
 }
 
-.certificate p {
+.certificates p {
     font-size: 14px;
     color: #888;
 }
 
-.certificate a {
+.certificates a {
     color: var(--hover-color); /* Initial link color */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition */
@@ -737,11 +737,11 @@ main {
         gap: 15px; /* Adjust spacing between certificates */
     }
 
-    .certificate {
+    .certificates {
         width: 80%; /* Responsive width for certificates */
     }
 
-    .certificate img {
+    .certificates img {
         width: 100%; /* Ensure images resize to fit the card width */
         height: auto;
     }
@@ -764,20 +764,20 @@ main {
     .about-text {
         font-size: 14px;
     }
-        .certificate {
+    .certificates {
         width: 90%; /* Full width with padding on very small screens */
         padding: 8px;
     }
 
-    .certificate h3 {
+    .certificates h3 {
         font-size: 16px; /* Adjust font size for headings */
     }
 
-    .certificate p {
+    .certificates p {
         font-size: 12px; /* Smaller font size for descriptions */
     }
 
-    .certificate a {
+    .certificates a {
         font-size: 14px; /* Link font size */
     }
 
