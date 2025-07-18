@@ -1,6 +1,6 @@
 # Hanan Nasir's Portfolio
 
-Welcome to my portfolio repository! 🌟
+Welcome to my portfolio repository! 
 
 You can view my live portfolio website here: **[Hanan Nasir's Portfolio](https://hann2004.github.io/my_virtual_assistance_portfolio/)**
 
